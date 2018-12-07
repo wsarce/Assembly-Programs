@@ -23,7 +23,7 @@ PORTB_IN	EQU 0x410044A0
 PORTB_WRCONFIG	EQU 0x410044A8
 	
 ; Define useful bits and LCD commands	
-RS_BIT		EQU	0x10			; Bit 4
+RS_BIT		EQU0x10				; Bit 4
 RW_BIT		EQU 0x20			; Bit 5
 EN_BIT		EQU 0x40			; Bit 6
 CR_CMD		EQU 0x0C0			; Carriage return command
@@ -32,7 +32,7 @@ CR_CMD		EQU 0x0C0			; Carriage return command
 	AREA data, DATA, READONLY
 		
 DATALINE1	DCB	"McIntyre, Arce",0
-DATALINE2	DCB "ECEN - 3320",0
+DATALINE2	DCB 	"ECEN - 3320",0
 DATALINE3	DCB	"1ST: ",0
 DATALINE4	DCB	"2ND: ",0
 	
